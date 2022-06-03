@@ -1,9 +1,9 @@
 # Lead detection with Sentinel-1 in the Beaufort Gyre using Google Earth Engine
 
 
-### Jullian C. B. Williams, Stephen F. Ackley, Alberto M. Mestas-Nuñez, Grant MacDonald
-### NASA Center for Advanced Measurements in Extreme Environments 
-### The University of Texas at San Antonio, 1 UTSA Circle, San Antonio, Texas 78249
+#### Jullian C. B. Williams, Stephen F. Ackley, Alberto M. Mestas-Nuñez, Grant MacDonald
+NASA Center for Advanced Measurements in Extreme Environments (CAMEE)
+The University of Texas at San Antonio, 1 UTSA Circle, San Antonio, Texas 78249
 
 
 ## Abstract
