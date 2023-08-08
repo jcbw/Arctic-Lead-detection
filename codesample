@@ -1,0 +1,531 @@
+# Image call list. You can decide to import images in another way (For loop, etc.)
+
+var s1 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161202T021555_20161202T021655_003211_005779_F786').select('HH','HV')
+var s2 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161202T021655_20161202T021755_003211_005779_EB96').select('HH','HV')
+var s_3 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161202T035439_20161202T035539_003212_00577E_5A65').select('HH','HV')
+var s4 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161202T035539_20161202T035558_003212_00577E_864D').select('HH','HV')
+var s5	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161203T043546_20161203T043628_003227_0057EF_7A69').select('HH','HV')
+var s6	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161205T010250_20161205T010350_003254_0058C4_0ACC').select('HH','HV')
+var s7	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161205T024035_20161205T024135_003255_0058CB_84D1').select('HH','HV')
+var s8	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161205T024135_20161205T024235_003255_0058CB_DE79').select('HH','HV')
+var s9  = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161206T014300_20161206T014400_003269_005930_26F6').select('HH','HV')
+var s10	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161206T014400_20161206T014500_003269_005930_0CFC').select('HH','HV')
+var s11	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161206T032144_20161206T032244_003270_005937_8206').select('HH','HV')
+var s12	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161206T032244_20161206T032303_003270_005937_9FE2').select('HH','HV')
+var s13	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161207T040251_20161207T040351_003285_0059A4_CDAB').select('HH','HV')
+var s14	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161207T040351_20161207T040451_003285_0059A4_6676').select('HH','HV')
+var s15	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161209T034625_20161209T034725_003314_005A79_05A6').select('HH','HV')
+var s16	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161209T034725_20161209T034825_003314_005A79_773A').select('HH','HV')
+var s17 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161210T024849_20161210T024949_003328_005AE8_253D').select('HH','HV')
+var s18 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161210T024949_20161210T025049_003328_005AE8_E20C').select('HH','HV')
+var s19	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161211T032956_20161211T033056_003343_005B56_99B1').select('HH','HV')
+var s20	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161211T033056_20161211T033114_003343_005B56_55DC').select('HH','HV')
+var s21 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161215T011819_20161215T011919_003400_005CEE_70D0').select('HH','HV')
+var s22	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161215T011919_20161215T012019_003400_005CEE_A31B').select('HH','HV')
+var s23	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161215T025701_20161215T025801_003401_005CF3_9712').select('HH','HV')
+var s24	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161215T025801_20161215T025901_003401_005CF3_8469').select('HH','HV')
+var s25	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161215T043545_20161215T043627_003402_005CFB_92DD').select('HH','HV')
+var s26	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161217T024035_20161217T024135_003430_005DC8_D488').select('HH','HV')
+var s27	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161217T024135_20161217T024235_003430_005DC8_CF4F').select('HH','HV')
+var s28	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161219T040250_20161219T040356_003460_005E91_ADF2').select('HH','HV')
+var s29	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161221T034624_20161221T034724_003489_005F6C_B6CD').select('HH','HV')
+var s30	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161221T034724_20161221T034824_003489_005F6C_4985').select('HH','HV')
+var s31	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161224T023220_20161224T023320_003532_00609E_8DA7').select('HH','HV')
+var s32	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161224T023320_20161224T023420_003532_00609E_9296').select('HH','HV')
+var s33	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161226T035439_20161226T035539_003562_00617C_2534').select('HH','HV')
+var s34	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161226T035539_20161226T035557_003562_00617C_629E').select('HH','HV')
+var s35	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161227T043545_20161227T043645_003577_0061EF_1C87').select('HH','HV')
+var s36	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161229T010249_20161229T010349_003604_0062C9_E68A').select('HH','HV')
+var s37	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161229T024034_20161229T024134_003605_0062D0_E6A6').select('HH','HV')
+var s38	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161229T024134_20161229T024234_003605_0062D0_9626').select('HH','HV')
+var s39	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161231T040250_20161231T040350_003635_0063B1_6BFD').select('HH','HV')
+var s40	= ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161231T040350_20161231T040450_003635_0063B1_A454').select('HH','HV')
+
+# Select each image polarization and find (1) the product, (2) convert to DN values and then 
+# (3) rescale image the product image (negative values to absolute) and then convert to DN.
+
+var s1hhv = s1.select('HH').multiply(s1.select('HV'))
+var shh001 = s1.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh002 = s1.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh003 =s1hhv.unitScale(100, 1000).multiply(255).toByte();
+//Map.addLayer(s1hhv,{min:-25,max:10}, 'S1_1_HH')
+
+
+#Then (1) composite the product, cross- and co-polar bands and (2) then clip the image to the region of interest (ROI).
+
+var stacks01 = shh001.addBands(shh002).addBands(shh003);
+var st01 = stacks01.clip(s1_edge)
+
+var s1hhv02 = s2.select('HH').multiply(s2.select('HV'))
+var shh021 = s2.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh022 = s2.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh023 =s1hhv02.unitScale(100, 1000).multiply(255).toByte();
+//Map.addLayer(s1hhv,{min:-25,max:10}, 'S1_1_HH')
+
+var stacks02 = shh021.addBands(shh022).addBands(shh023);
+var st02 = stacks02.clip(s1_edge)
+
+
+var s1hhv03_ = s_3.select('HH').multiply(s_3.select('HV'))
+var shh013_ = s_3.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh023_ = s_3.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh033_ =s1hhv03_.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks03_ = shh013_.addBands(shh023_).addBands(shh033_);
+var st03_ = stacks03_.clip(s1_edge)
+
+var s1hhv04 = s4.select('HH').multiply(s4.select('HV'))
+var shh041 = s4.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh042 = s4.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh043 =s1hhv04.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks04 = shh041.addBands(shh042).addBands(shh043);
+var st04 = stacks04.clip(s1_edge)
+
+var s1hhv05 = s5.select('HH').multiply(s5.select('HV'))
+var shh051 = s5.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh052 = s5.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh053 =s1hhv05.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks05 = shh051.addBands(shh052).addBands(shh053);
+var st05 = stacks05.clip(s1_edge)
+
+var s1hhv06 = s6.select('HH').multiply(s6.select('HV'))
+var shh061 = s6.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh062 = s6.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh063 =s1hhv06.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks06 = shh061.addBands(shh062).addBands(shh063);
+var st06 = stacks06.clip(s1_edge)
+
+var s1hhv07 = s7.select('HH').multiply(s7.select('HV'))
+var shh071 = s7.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh072 = s7.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh073 =s1hhv07.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks07 = shh071.addBands(shh072).addBands(shh073);
+var st07 = stacks07.clip(s1_edge)
+
+var s1hhv08 = s8.select('HH').multiply(s8.select('HV'))
+var shh081 = s8.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh082 = s8.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh083 =s1hhv08.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks08 = shh081.addBands(shh082).addBands(shh083);
+var st08 = stacks08.clip(s1_edge)
+
+var s1hhv09 = s9.select('HH').multiply(s9.select('HV'));
+var shh091 = s9.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh092 = s9.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh093 =s1hhv09.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks09 = shh091.addBands(shh092).addBands(shh093);
+var st09 = stacks09.clip(s1_edge)
+
+var s1hhv010 = s10.select('HH').multiply(s10.select('HV'))
+var shh10 = s10.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh102 = s10.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh103 =s1hhv010.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks010 = shh10.addBands(shh102).addBands(shh103);
+var st010 = stacks010.clip(s1_edge)
+
+var s1hhv011 = s11.select('HH').multiply(s11.select('HV'))
+var shh11 = s11.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh112 = s11.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh113 =s1hhv011.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks011 = shh11.addBands(shh112).addBands(shh113);
+var st011 = stacks011.clip(s1_edge)
+
+var s1hhv012 = s12.select('HH').multiply(s12.select('HV'))
+var shh12 = s12.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh122 = s12.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh123 =s1hhv012.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks012 = shh12.addBands(shh122).addBands(shh123);
+var st012 = stacks012.clip(s1_edge)
+
+var s1hhv013 = s13.select('HH').multiply(s13.select('HV'))
+var shh13 = s13.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh132 = s13.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh133 =s1hhv013.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks013 = shh13.addBands(shh132).addBands(shh133);
+var st013 = stacks013.clip(s1_edge)
+
+var s1hhv014 = s14.select('HH').multiply(s14.select('HV'))
+var shh14 = s14.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh142 = s14.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh143 =s1hhv014.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks014 = shh14.addBands(shh142).addBands(shh143);
+var st014 = stacks014.clip(s1_edge)
+
+var s1hhv015 = s15.select('HH').multiply(s15.select('HV'))
+var shh15 = s15.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh152 = s15.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh153 =s1hhv015.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks015 = shh15.addBands(shh152).addBands(shh153);
+var st015 = stacks015.clip(s1_edge)
+
+var s1hhv016 = s16.select('HH').multiply(s16.select('HV'))
+var shh16 = s16.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh162 = s16.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh163 =s1hhv016.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks016 = shh16.addBands(shh162).addBands(shh163);
+var st016 = stacks016.clip(s1_edge)
+
+var s1hhv017 = s17.select('HH').multiply(s17.select('HV'))
+var shh17 = s17.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh172 = s17.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh173 =s1hhv017.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks017 = shh17.addBands(shh172).addBands(shh173);
+var st017 = stacks017.clip(s1_edge)
+
+var s1hhv018 = s18.select('HH').multiply(s18.select('HV'))
+var shh18 = s18.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh182 = s18.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh183 =s1hhv018.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks018 = shh18.addBands(shh182).addBands(shh183);
+var st018 = stacks018.clip(s1_edge)
+
+var s1hhv019 = s19.select('HH').multiply(s19.select('HV'))
+var shh19 = s19.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh192 = s19.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh193 =s1hhv019.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks019 = shh19.addBands(shh192).addBands(shh193);
+var st019 = stacks019.clip(s1_edge)
+
+var s1hhv020 = s20.select('HH').multiply(s20.select('HV'))
+var shh020 = s20.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh202 = s20.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh203 =s1hhv020.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks020 = shh020.addBands(shh202).addBands(shh203);
+var st020 = stacks020.clip(s1_edge)
+
+var s1hhv021 = s21.select('HH').multiply(s21.select('HV'))
+var shh021 = s21.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh212 = s21.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh213 =s1hhv021.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks021 = shh021.addBands(shh212).addBands(shh213);
+var st021 = stacks021.clip(s1_edge)
+
+var s1hhv022 = s22.select('HH').multiply(s22.select('HV'))
+var shh022 = s22.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh222 = s22.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh223 =s1hhv022.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks022 = shh022.addBands(shh222).addBands(shh223);
+var st022 = stacks022.clip(s1_edge)
+
+var s1hhv023 = s23.select('HH').multiply(s23.select('HV'))
+var shh023 = s23.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh232 = s23.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh233 =s1hhv023.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks023 = shh023.addBands(shh232).addBands(shh233);
+var st023 = stacks023.clip(s1_edge)
+
+var s1hhv024 = s24.select('HH').multiply(s24.select('HV'))
+var shh024 = s24.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh242 = s24.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh243 =s1hhv024.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks024 = shh024.addBands(shh242).addBands(shh243);
+var st024 = stacks024.clip(s1_edge)
+
+var s1hhv025 = s25.select('HH').multiply(s25.select('HV'))
+var shh025 = s25.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh252 = s25.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh253 =s1hhv025.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks025 = shh025.addBands(shh252).addBands(shh253);
+var st025 = stacks025.clip(s1_edge)
+
+var s1hhv026 = s26.select('HH').multiply(s26.select('HV'))
+var shh026 = s26.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh262 = s26.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh263 =s1hhv026.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks026 = shh026.addBands(shh262).addBands(shh263);
+var st026 = stacks026.clip(s1_edge)
+
+var s1hhv027 = s27.select('HH').multiply(s27.select('HV'))
+var shh027 = s27.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh272 = s27.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh273 =s1hhv027.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks027 = shh027.addBands(shh272).addBands(shh273);
+var st027 = stacks027.clip(s1_edge)
+
+var s1hhv028 = s28.select('HH').multiply(s28.select('HV'))
+var shh028 = s28.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh282 = s28.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh283 =s1hhv028.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks028 = shh028.addBands(shh282).addBands(shh283);
+var st028 = stacks028.clip(s1_edge)
+
+var s1hhv029 = s29.select('HH').multiply(s29.select('HV'))
+var shh029 = s29.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh292 = s29.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh293 =s1hhv029.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks029 = shh029.addBands(shh292).addBands(shh293);
+var st029 = stacks029.clip(s1_edge)
+
+var s1hhv030 = s30.select('HH').multiply(s30.select('HV'))
+var shh030 = s30.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh302 = s30.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh303 =s1hhv030.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks030 = shh030.addBands(shh302).addBands(shh303);
+var st030 = stacks030.clip(s1_edge)
+
+var s1hhv031 = s31.select('HH').multiply(s31.select('HV'))
+var shh031 = s31.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh312 = s31.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh313 =s1hhv031.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks031 = shh031.addBands(shh312).addBands(shh313);
+var st031 = stacks031.clip(s1_edge)
+
+var s1hhv032 = s32.select('HH').multiply(s32.select('HV'))
+var shh032 = s32.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh322 = s32.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh323 =s1hhv032.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks032 = shh032.addBands(shh322).addBands(shh323);
+var st032 = stacks032.clip(s1_edge)
+
+var s1hhv033 = s33.select('HH').multiply(s33.select('HV'))
+var shh033 = s33.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh332 = s33.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh333 =s1hhv033.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks033 = shh033.addBands(shh332).addBands(shh333);
+var st033 = stacks033.clip(s1_edge)
+
+var s1hhv034 = s34.select('HH').multiply(s34.select('HV'))
+var shh034 = s34.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh342 = s34.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh343 =s1hhv034.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks034 = shh034.addBands(shh342).addBands(shh343);
+var st034 = stacks034.clip(s1_edge)
+
+var s1hhv135 = s35.select('HH').multiply(s35.select('HV'))
+var shh0135 = s35.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh0235 = s35.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh0335 =s1hhv135.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks035 = shh0135.addBands(shh0235).addBands(shh0335);
+var st035 = stacks035.clip(s1_edge)
+
+Map.addLayer(st035,{min:0,max:255}, '35',false)
+
+var s1hhv136 = s36.select('HH').multiply(s36.select('HV'))
+var shh0136 = s36.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh0236 = s36.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh0336 =s1hhv136.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks036 = shh0136.addBands(shh0236).addBands(shh0336);
+var st036 = stacks036.clip(s1_edge)
+
+Map.addLayer(st036,{min:0,max:255}, '36',false)
+
+var s1hhv137 = s37.select('HH').multiply(s37.select('HV'))
+var shh0137 = s37.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh0237 = s37.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh0337 =s1hhv137.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks037 = shh0137.addBands(shh0237).addBands(shh0337);
+var st037 = stacks037.clip(s1_edge)
+
+Map.addLayer(st037,{min:0,max:255}, '37',false)
+
+var s1hhv138 = s38.select('HH').multiply(s38.select('HV'))
+var shh0138 = s38.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh0238 = s38.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh0338 =s1hhv138.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks038 = shh0138.addBands(shh0238).addBands(shh0338);
+var st038 = stacks038.clip(s1_edge)
+
+Map.addLayer(st038,{min:0,max:255}, '38',false)
+
+var s1hhv139 = s39.select('HH').multiply(s39.select('HV'))
+var shh0139 = s39.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh0239 = s39.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh0339 =s1hhv139.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks039 = shh0139.addBands(shh0239).addBands(shh0339);
+var st039 = stacks039.clip(s1_edge)
+
+Map.addLayer(st039,{min:0,max:255}, '39',false)
+
+var s1hhv140 = s40.select('HH').multiply(s40.select('HV'))
+var shh0140 = s40.select('HH').unitScale(-45, 10).multiply(255).toByte();
+var shh0240 = s40.select('HV').unitScale(-45, 10).multiply(255).toByte();
+var shh0340 =s1hhv140.unitScale(100, 1000).multiply(255).toByte();
+
+
+var stacks040 = shh0140.addBands(shh0240).addBands(shh0340);
+var st040 = stacks040.clip(s1_edge)
+
+Map.addLayer(st040,{min:0,max:255}, '40',false)
+
+
+#You can add to the map layer to see the image in the window. Set to 'false' so that it does not print here.
+# To see them, change to 'true' or delete ", false" from line.
+
+
+#Mosaic images that occur on the same day along the same trackline.
+
+var mosaic = ee.ImageCollection.fromImages([st01,st02,st03_,st04]).mosaic();
+var mosaic2 = ee.ImageCollection.fromImages([st05]).mosaic();
+var mosaic3 =ee.ImageCollection.fromImages([st06,st07,st08]).mosaic();
+var mosaic4 =ee.ImageCollection.fromImages([st09,st010,st011,st012]).mosaic();
+var mosaic5 =ee.ImageCollection.fromImages([st013,st014]).mosaic();
+var mosaic6 = ee.ImageCollection.fromImages([st015,st016]).mosaic();
+var mosaic7 = ee.ImageCollection.fromImages([st017, st018]).mosaic();
+var mosaic8 = ee.ImageCollection.fromImages([st019, st020]).mosaic();
+var mosaic9 = ee.ImageCollection.fromImages([st021,st022,st023,st025,st024]).mosaic();
+var mosaic10 = ee.ImageCollection.fromImages([st027,st026]).mosaic();
+var mosaic11 = ee.ImageCollection.fromImages([st028]).mosaic();
+var mosaic12 = ee.ImageCollection.fromImages([st030,st029]).mosaic();
+var mosaic13 = ee.ImageCollection.fromImages([st031,st032]).mosaic();
+var mosaic14 = ee.ImageCollection.fromImages([st033,st034]).mosaic();
+var mosaic15 = ee.ImageCollection.fromImages([st035]).mosaic();
+var mosaic16 = ee.ImageCollection.fromImages([st036,st037,st038]).mosaic();
+var mosaic17 = ee.ImageCollection.fromImages([st039,st040]).mosaic();
+
+
+#Define the classifier (Support Vector Machine) to classify mosaics
+
+var classifier = ee.Classifier.libsvm().train(training,"sentlead")
+var classified = st03.classify(classifier);
+
+
+var classified1 = mosaic.classify(classifier);
+Map.addLayer(classified1, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified2 = mosaic2.classify(classifier);
+Map.addLayer(classified2, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified3 = mosaic3.classify(classifier);
+Map.addLayer(classified3, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified4 = mosaic4.classify(classifier);
+Map.addLayer(classified4, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified5 = mosaic5.classify(classifier);
+Map.addLayer(classified5, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified6 = mosaic6.classify(classifier);
+Map.addLayer(classified6, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified7 = mosaic7.classify(classifier);
+Map.addLayer(classified7, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified8 = mosaic8.classify(classifier);
+Map.addLayer(classified8, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified9 = mosaic9.classify(classifier);
+Map.addLayer(classified9, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified10 = mosaic10.classify(classifier);
+Map.addLayer(classified10, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified11 = mosaic11.classify(classifier);
+Map.addLayer(classified11, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified12 = mosaic12.classify(classifier);
+Map.addLayer(classified12, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified13 = mosaic13.classify(classifier);
+Map.addLayer(classified13, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified14 = mosaic14.classify(classifier);
+Map.addLayer(classified14, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified15 = mosaic15.classify(classifier);
+Map.addLayer(classified15, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified16 = mosaic16.classify(classifier);
+Map.addLayer(classified16, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+var classified17 = mosaic17.classify(classifier);
+Map.addLayer(classified17, {min: 1, max: 4, palette: ['red','white','blue','purple']}, 'Classification SVM_SAR',false);
+
+#Store classified images as image collections.
+
+var class0 = ee.ImageCollection(classified1)
+var class1 = ee.ImageCollection(classified2);
+var class2 = ee.ImageCollection(classified3);
+var class3 = ee.ImageCollection(classified4);
+var class4 = ee.ImageCollection(classified5);
+var class5 = ee.ImageCollection(classified6);
+var class6 = ee.ImageCollection(classified7);
+var class7 = ee.ImageCollection(classified8);
+var class8 = ee.ImageCollection(classified9);
+var class9 = ee.ImageCollection(classified10);
+var class10 = ee.ImageCollection(classified11);
+var class11 = ee.ImageCollection(classified12);
+var class12 = ee.ImageCollection(classified13);
+var class13 = ee.ImageCollection(classified14);
+var class14 = ee.ImageCollection(classified15);
+var class15 = ee.ImageCollection(classified16);
+var class16 = ee.ImageCollection(classified17);
+
+
+#Convert classified image collections to vectors.
+
+var outpoly = classified1.addBands(st03).reduceToVectors({
+  geometry: geometry,
+  crs: 'EPSG:3995',
+  scale: 1000,
+  geometryType: 'polygon',
+  eightConnected: true,
+  maxPixels: 5e9,
+  labelProperty: 'icetype',
+  reducer: ee.Reducer.mean()
+});
+
+#Export vector feature collection to shapefile (or csv etc.)
+
+Export.table.toDrive({
+  collection: outpoly,
+  description:'class0_',
+  folder: 'sar_fraction_dec16',
+  fileFormat: 'SHP'
+});
