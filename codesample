@@ -445,8 +445,37 @@ var mosaic15 = ee.ImageCollection.fromImages([st035]).mosaic();
 var mosaic16 = ee.ImageCollection.fromImages([st036,st037,st038]).mosaic();
 var mosaic17 = ee.ImageCollection.fromImages([st039,st040]).mosaic();
 
+#SNIC segmentation 
+
+var kernel = ee.Kernel.gaussian(7)
+var img = st03.int8().convolve(kernel)
+
+var snic = ee.Algorithms.Image.Segmentation.SNIC({
+  image: img,
+  size: 32,
+  compactness: 5,
+  connectivity: 8,
+  neighborhoodSize: 256
+})
+
+#Surface roughness from texture measures
+
+var HHr = snic.select('HH_mean').int32()
+var HHr = HHr.rename('eHH');
+var textureMeasures = ['eHH_asm', 'eHH_contrast', 'eHH_var', 'eHH_ent'];
+var glcm = HHr.glcmTexture({size: 1, average: true }).select(textureMeasures);
+
+var SARtexture = st03.addBands(HHr).addBands(glcm);
+var bandsCombined = ['st03','eHH','HHr', 'eHH_asm', 'eHH_contrast', 'eHH_var', 'eHH_ent'];
 
 #Define the classifier (Support Vector Machine) to classify mosaics
+
+var sample = ow.merge(thin).merge(thick).merge(thin_ice);
+var training = st03.sampleRegions({
+  collection: sample, 
+  properties: ['sentlead'], 
+  scale: 40
+});
 
 var classifier = ee.Classifier.libsvm().train(training,"sentlead")
 var classified = st03.classify(classifier);
