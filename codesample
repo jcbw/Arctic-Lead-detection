@@ -1,4 +1,4 @@
-//Image call list. You can decide to import images in another way (For loop, etc.)
+# Image call list. You can decide to import images in another way (For loop, etc.)
 
 var s1 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161202T021555_20161202T021655_003211_005779_F786').select('HH','HV')
 var s2 = ee.Image('COPERNICUS/S1_GRD/S1B_EW_GRDM_1SDH_20161202T021655_20161202T021755_003211_005779_EB96').select('HH','HV')
