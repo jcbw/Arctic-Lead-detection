@@ -1,1 +1,2 @@
-/*.ipynb linguist-language=PY
+code/* linguist-documentation=false
+code/* linguist-vendored=false
