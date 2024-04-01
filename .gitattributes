@@ -1,5 +1,2 @@
-*.java linguist-detectable=true
-*.js linguist-detectable=false
-*.html linguist-detectable=false
-*.xml linguist-detectable=false
-dist/* linguist-vendored=false
+Leads_Beaufort.ipynb/* linguist-documentation=false
+Leads_Beaufort.ipynb/* linguist-vendored
