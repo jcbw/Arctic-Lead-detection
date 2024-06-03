@@ -13,3 +13,5 @@ Sea ice leads are produced from deformational forces, which break apart the ice 
 
 Code is adapted from supplimentary documents in:
 * Hird, J., DeLancey, E., McDermid, G., &amp; Kariyeva, J. (2017). Google Earth engine, open-access satellite data, and machine learning in support of large-area probabilistic wetland mapping. Remote Sensing, 9(12), 1315. doi:10.3390/rs9121315 
+
+[Google Earth Engine can be accessed from here.](https://earthengine.google.com/)
