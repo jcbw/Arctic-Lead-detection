@@ -1,5 +1,6 @@
 # Lead detection with Sentinel-1 in the Beaufort Gyre using Google Earth Engine
 
+[Google logo](https://pngimg.com/image/19642) [Google Earth Engine logo](https://www.pngaaa.com/detail/546772)
 
 #### Jullian C. B. Williams, Stephen F. Ackley, Alberto M. Mestas-Nuñez, Grant J. MacDonald
 NASA Center for Advanced Measurements in Extreme Environments (CAMEE) <br />
