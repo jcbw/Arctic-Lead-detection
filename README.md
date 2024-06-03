@@ -1,7 +1,6 @@
 # Lead detection with Sentinel-1 in the Beaufort Gyre using Google Earth Engine
 
-![Google Earth Engine logo](https://www.pngaaa.com/detail/546772](https://image.pngaaa.com/754/546754-middle.png)
-[<img src="path/to/image.png">](https://www.pngaaa.com/detail/546772](https://image.pngaaa.com/754/546754-middle.png)
+![googleearth-engine_104576](https://github.com/jcbw/Arctic_Lead_Detection/assets/46701190/e6ecbfa7-3556-4baa-8784-d94bbe757216)
 
 
 #### Jullian C. B. Williams, Stephen F. Ackley, Alberto M. Mestas-Nuñez, Grant J. MacDonald
